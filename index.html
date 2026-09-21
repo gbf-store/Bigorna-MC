@@ -3,148 +3,806 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bigorna MC — loja oficial de VIPs do servidor Minecraft.">
+
   <title>Bigorna MC | Loja Oficial</title>
+
+  <meta
+    name="description"
+    content="Loja oficial do Bigorna MC. Adquira seus VIPs e benefícios exclusivos."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="particles" aria-hidden="true"></div>
 
-  <header class="topbar">
-    <a class="brand" href="#inicio" aria-label="Bigorna MC - início">
-      <span class="brand-icon">⚒</span>
-      <span>
-        <strong>BIGORNA</strong>
-        <small>MC</small>
-      </span>
-    </a>
-    <nav>
-      <a href="#inicio">Início</a>
-      <a href="#vips">VIPs</a>
-      <a href="#como-funciona">Como funciona</a>
-      <button class="cart-button" id="openCart">🛒 Carrinho <b id="cartCount">0</b></button>
-    </nav>
+<body>
+
+  <!-- FUNDO ANIMADO -->
+  <div id="particles" class="particles"></div>
+
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <div class="container header-content">
+
+      <a href="#inicio" class="logo">
+        <span class="logo-icon">⚒️</span>
+
+        <span class="logo-text">
+          BIGORNA
+          <small>MC</small>
+        </span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#inicio">Início</a>
+        <a href="#vips">VIPs</a>
+        <a href="#como-funciona">Como funciona</a>
+      </nav>
+
+      <button
+        id="cart-button"
+        class="cart-button"
+        type="button"
+      >
+        🛒 Carrinho
+        <span id="cart-count">0</span>
+      </button>
+
+    </div>
+
   </header>
 
+
   <main>
-    <section class="hero" id="inicio">
-      <div class="hero-content">
-        <div class="eyebrow">⚔️ SERVIDOR MINECRAFT</div>
-        <h1>BIGORNA <span>MC</span></h1>
-        <p>Fortaleça sua jornada. Escolha seu VIP e destaque-se no servidor.</p>
-        <a class="primary-button" href="#vips">VER VIPs <span>↓</span></a>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <div class="hero-badge">
+            ⚒️ LOJA OFICIAL • BIGORNA MC
+          </div>
+
+          <h1>
+            FORJE SUA
+            <span>LENDA.</span>
+          </h1>
+
+          <p>
+            Escolha seu VIP, conquiste benefícios exclusivos
+            e deixe sua marca no universo do Bigorna MC.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#vips" class="primary-button">
+              ⛏️ VER VIPS
+            </a>
+
+            <a href="#como-funciona" class="secondary-button">
+              COMO FUNCIONA
+            </a>
+
+          </div>
+
+          <div class="hero-stats">
+
+            <div>
+              <strong>05</strong>
+              <span>VIPs</span>
+            </div>
+
+            <div>
+              <strong>∞</strong>
+              <span>Benefícios</span>
+            </div>
+
+            <div>
+              <strong>⚒️</strong>
+              <span>Bigorna MC</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-art">
+
+          <div class="minecraft-frame">
+
+            <div class="floating-block block-one">⛓️</div>
+            <div class="floating-block block-two">💎</div>
+            <div class="floating-block block-three">🟩</div>
+
+            <div class="anvil-glow"></div>
+
+            <div class="anvil">
+              ⚒️
+            </div>
+
+            <div class="hero-art-text">
+              <span>BIGORNA</span>
+              <strong>MC</strong>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
-      <div class="hero-anvil" aria-hidden="true">
-        <div class="glow"></div>
-        <div class="anvil">⚒</div>
-      </div>
+
     </section>
 
-    <section class="section" id="vips">
-      <div class="section-heading">
-        <span class="section-tag">✨ BENEFÍCIOS EXCLUSIVOS</span>
-        <h2>Escolha seu <span>VIP</span></h2>
-        <p>Adquira vantagens especiais para sua experiência no Bigorna MC.</p>
+
+    <!-- VIPS -->
+    <section id="vips" class="vips-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="section-tag">⚔️ LOJA</span>
+
+            <h2>
+              ESCOLHA SEU <span>VIP</span>
+            </h2>
+          </div>
+
+          <p>
+            Escolha um ou vários VIPs. Você pode alterar
+            as quantidades diretamente no carrinho.
+          </p>
+
+        </div>
+
+
+        <div class="vip-grid">
+
+
+          <!-- PRATA / FERRO -->
+          <article class="vip-card vip-prata">
+
+            <div class="vip-image iron-image">
+
+              <div class="material-visual">
+                ⛓️
+              </div>
+
+              <span class="material-label">
+                FERRO
+              </span>
+
+            </div>
+
+            <div class="vip-content">
+
+              <span class="vip-tier">
+                VIP
+              </span>
+
+              <div class="vip-title-row">
+                <h3>PRATA</h3>
+                <span>⚙️</span>
+              </div>
+
+              <p>
+                O primeiro passo para quem deseja
+                começar sua jornada no Bigorna MC.
+              </p>
+
+              <ul class="vip-features">
+                <li>Tag exclusiva</li>
+                <li>Benefícios especiais</li>
+                <li>Vantagens dentro do servidor</li>
+              </ul>
+
+              <div class="vip-bottom">
+
+                <div class="price">
+                  <small>PREÇO</small>
+                  <strong>R$ --</strong>
+                </div>
+
+                <button
+                  class="add-to-cart"
+                  type="button"
+                  data-vip="VIP Prata"
+                  data-price="A definir"
+                >
+                  🛒 ADICIONAR
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- OURO -->
+          <article class="vip-card vip-ouro featured">
+
+            <div class="popular-badge">
+              ⭐ MAIS PROCURADO
+            </div>
+
+            <div class="vip-image gold-image">
+
+              <div class="material-visual">
+                🪙
+              </div>
+
+              <span class="material-label">
+                OURO
+              </span>
+
+            </div>
+
+            <div class="vip-content">
+
+              <span class="vip-tier">
+                VIP
+              </span>
+
+              <div class="vip-title-row">
+                <h3>OURO</h3>
+                <span>👑</span>
+              </div>
+
+              <p>
+                Mais destaque e benefícios para quem
+                quer evoluir ainda mais no servidor.
+              </p>
+
+              <ul class="vip-features">
+                <li>Tag VIP Ouro</li>
+                <li>Benefícios exclusivos</li>
+                <li>Maior destaque</li>
+              </ul>
+
+              <div class="vip-bottom">
+
+                <div class="price">
+                  <small>PREÇO</small>
+                  <strong>R$ --</strong>
+                </div>
+
+                <button
+                  class="add-to-cart"
+                  type="button"
+                  data-vip="VIP Ouro"
+                  data-price="A definir"
+                >
+                  🛒 ADICIONAR
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- ESMERALDA -->
+          <article class="vip-card vip-esmeralda">
+
+            <div class="vip-image emerald-image">
+
+              <div class="material-visual">
+                💚
+              </div>
+
+              <span class="material-label">
+                ESMERALDA
+              </span>
+
+            </div>
+
+            <div class="vip-content">
+
+              <span class="vip-tier">
+                VIP
+              </span>
+
+              <div class="vip-title-row">
+                <h3>ESMERALDA</h3>
+                <span>💚</span>
+              </div>
+
+              <p>
+                Um nível superior de exclusividade
+                para jogadores que querem mais.
+              </p>
+
+              <ul class="vip-features">
+                <li>Tag Esmeralda</li>
+                <li>Benefícios avançados</li>
+                <li>Recursos especiais</li>
+              </ul>
+
+              <div class="vip-bottom">
+
+                <div class="price">
+                  <small>PREÇO</small>
+                  <strong>R$ --</strong>
+                </div>
+
+                <button
+                  class="add-to-cart"
+                  type="button"
+                  data-vip="VIP Esmeralda"
+                  data-price="A definir"
+                >
+                  🛒 ADICIONAR
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- DIAMANTE -->
+          <article class="vip-card vip-diamante">
+
+            <div class="vip-image diamond-image">
+
+              <div class="material-visual">
+                💎
+              </div>
+
+              <span class="material-label">
+                DIAMANTE
+              </span>
+
+            </div>
+
+            <div class="vip-content">
+
+              <span class="vip-tier">
+                VIP
+              </span>
+
+              <div class="vip-title-row">
+                <h3>DIAMANTE</h3>
+                <span>💎</span>
+              </div>
+
+              <p>
+                Poder e exclusividade para quem quer
+                estar entre os grandes.
+              </p>
+
+              <ul class="vip-features">
+                <li>Tag Diamante</li>
+                <li>Benefícios premium</li>
+                <li>Vantagens exclusivas</li>
+              </ul>
+
+              <div class="vip-bottom">
+
+                <div class="price">
+                  <small>PREÇO</small>
+                  <strong>R$ --</strong>
+                </div>
+
+                <button
+                  class="add-to-cart"
+                  type="button"
+                  data-vip="VIP Diamante"
+                  data-price="A definir"
+                >
+                  🛒 ADICIONAR
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- CELESTIAL -->
+          <article class="vip-card vip-celestial">
+
+            <div class="vip-image celestial-image">
+
+              <div class="stars"></div>
+
+              <div class="material-visual">
+                🌌
+              </div>
+
+              <span class="material-label">
+                NETHERITE
+              </span>
+
+            </div>
+
+            <div class="vip-content">
+
+              <span class="vip-tier">
+                VIP
+              </span>
+
+              <div class="vip-title-row">
+                <h3>CELESTIAL</h3>
+                <span>🌌</span>
+              </div>
+
+              <p>
+                O nível máximo para quem deseja uma
+                presença lendária no servidor.
+              </p>
+
+              <ul class="vip-features">
+                <li>Tag Celestial</li>
+                <li>Benefícios máximos</li>
+                <li>Experiência exclusiva</li>
+              </ul>
+
+              <div class="vip-bottom">
+
+                <div class="price">
+                  <small>PREÇO</small>
+                  <strong>R$ --</strong>
+                </div>
+
+                <button
+                  class="add-to-cart"
+                  type="button"
+                  data-vip="VIP Celestial"
+                  data-price="A definir"
+                >
+                  🛒 ADICIONAR
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
       </div>
 
-      <div class="vip-grid">
-        <article class="vip-card prata">
-          <div class="vip-art art-prata"><span>🛡️</span></div>
-          <div class="vip-content">
-            <span class="rarity">VIP • I</span>
-            <h3>Prata</h3>
-            <p>O primeiro passo para quem quer uma experiência diferenciada.</p>
-            <ul><li>Tag exclusiva</li><li>Benefícios especiais</li><li>Atendimento prioritário</li></ul>
-            <div class="price">R$ <strong>--</strong></div>
-            <button class="buy-button" data-vip="VIP Prata" data-price="A definir">ADICIONAR AO CARRINHO</button>
-          </div>
-        </article>
-
-        <article class="vip-card ouro featured">
-          <div class="featured-label">MAIS PROCURADO</div>
-          <div class="vip-art art-ouro"><span>👑</span></div>
-          <div class="vip-content">
-            <span class="rarity">VIP • II</span>
-            <h3>Ouro</h3>
-            <p>Mais vantagens e presença para quem quer se destacar.</p>
-            <ul><li>Tag exclusiva</li><li>Benefícios ampliados</li><li>Atendimento prioritário</li></ul>
-            <div class="price">R$ <strong>--</strong></div>
-            <button class="buy-button" data-vip="VIP Ouro" data-price="A definir">ADICIONAR AO CARRINHO</button>
-          </div>
-        </article>
-
-        <article class="vip-card esmeralda">
-          <div class="vip-art art-esmeralda"><span>💚</span></div>
-          <div class="vip-content">
-            <span class="rarity">VIP • III</span>
-            <h3>Esmeralda</h3>
-            <p>Um nível superior para jogadores que querem mais.</p>
-            <ul><li>Tag exclusiva</li><li>Benefícios premium</li><li>Atendimento prioritário</li></ul>
-            <div class="price">R$ <strong>--</strong></div>
-            <button class="buy-button" data-vip="VIP Esmeralda" data-price="A definir">ADICIONAR AO CARRINHO</button>
-          </div>
-        </article>
-
-        <article class="vip-card diamante">
-          <div class="vip-art art-diamante"><span>💎</span></div>
-          <div class="vip-content">
-            <span class="rarity">VIP • IV</span>
-            <h3>Diamante</h3>
-            <p>Uma experiência premium para quem quer máximo destaque.</p>
-            <ul><li>Tag exclusiva</li><li>Benefícios avançados</li><li>Atendimento VIP</li></ul>
-            <div class="price">R$ <strong>--</strong></div>
-            <button class="buy-button" data-vip="VIP Diamante" data-price="A definir">ADICIONAR AO CARRINHO</button>
-          </div>
-        </article>
-
-        <article class="vip-card celestial">
-          <div class="celestial-rays"></div>
-          <div class="vip-art art-celestial"><span>🌌</span></div>
-          <div class="vip-content">
-            <span class="rarity">VIP • V</span>
-            <h3>Celestial</h3>
-            <p>O nível máximo. Exclusividade para quem quer chegar ao topo.</p>
-            <ul><li>Tag exclusiva</li><li>Benefícios máximos</li><li>Atendimento prioritário</li></ul>
-            <div class="price">R$ <strong>--</strong></div>
-            <button class="buy-button" data-vip="VIP Celestial" data-price="A definir">ADICIONAR AO CARRINHO</button>
-          </div>
-        </article>
-      </div>
     </section>
 
-    <section class="how" id="como-funciona">
-      <div class="section-heading">
-        <span class="section-tag">📦 SIMPLES E RÁPIDO</span>
-        <h2>Como <span>funciona?</span></h2>
+
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona" class="how-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="section-tag">
+              ⛏️ PROCESSO
+            </span>
+
+            <h2>
+              COMO <span>FUNCIONA?</span>
+            </h2>
+          </div>
+
+        </div>
+
+
+        <div class="steps-grid">
+
+          <div class="step-card">
+
+            <div class="step-number">
+              01
+            </div>
+
+            <div class="step-icon">
+              🛒
+            </div>
+
+            <h3>ESCOLHA</h3>
+
+            <p>
+              Selecione um ou vários VIPs e adicione
+              ao seu carrinho.
+            </p>
+
+          </div>
+
+
+          <div class="step-card">
+
+            <div class="step-number">
+              02
+            </div>
+
+            <div class="step-icon">
+              💳
+            </div>
+
+            <h3>INICIE O PAGAMENTO</h3>
+
+            <p>
+              Confira seu pedido e utilize os dados
+              de pagamento apresentados na tela.
+            </p>
+
+          </div>
+
+
+          <div class="step-card">
+
+            <div class="step-number">
+              03
+            </div>
+
+            <div class="step-icon">
+              🎫
+            </div>
+
+            <h3>ENVIE O COMPROVANTE</h3>
+
+            <p>
+              Tire um print do comprovante e envie
+              através de um ticket no Discord.
+            </p>
+
+          </div>
+
+        </div>
+
       </div>
-      <div class="steps">
-        <div class="step"><b>01</b><h3>Escolha seu VIP</h3><p>Selecione o plano que combina com você.</p></div>
-        <div class="step"><b>02</b><h3>Finalize o pedido</h3><p>O pedido fica registrado no seu carrinho.</p></div>
-        <div class="step"><b>03</b><h3>Pagamento</h3><p>Os dados de Pix/e-mail serão adicionados posteriormente.</p></div>
-        <div class="step"><b>04</b><h3>Receba no servidor</h3><p>Após a confirmação, seu VIP poderá ser entregue.</p></div>
-      </div>
+
     </section>
+
+
+    <!-- BANNER -->
+    <section class="forge-section">
+
+      <div class="container">
+
+        <div class="forge-box">
+
+          <div class="forge-decoration">
+            ⚒️
+          </div>
+
+          <div class="forge-content">
+
+            <span>
+              BIGORNA MC
+            </span>
+
+            <h2>
+              FORJE SUA HISTÓRIA.
+            </h2>
+
+            <p>
+              Escolha seu VIP e faça parte da experiência.
+            </p>
+
+          </div>
+
+          <a href="#vips" class="primary-button">
+            ESCOLHER VIP
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
 
+
+  <!-- FOOTER -->
   <footer>
-    <div class="footer-brand">⚒ <strong>BIGORNA MC</strong></div>
-    <p>© <span id="year"></span> Bigorna MC. Todos os direitos reservados.</p>
-    <p class="footer-note">Site da loja • Pagamento será configurado posteriormente.</p>
+
+    <div class="container footer-content">
+
+      <div class="footer-brand">
+
+        <span class="footer-icon">
+          ⚒️
+        </span>
+
+        <div>
+          <strong>
+            BIGORNA <span>MC</span>
+          </strong>
+
+          <small>
+            LOJA OFICIAL
+          </small>
+        </div>
+
+      </div>
+
+      <p>
+        © 2026 Bigorna MC. Todos os direitos reservados.
+      </p>
+
+    </div>
+
   </footer>
 
-  <div class="modal-backdrop" id="cartModal" hidden>
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
-      <button class="close" id="closeCart" aria-label="Fechar">×</button>
-      <div class="modal-icon">🛒</div>
-      <h2 id="cartTitle">Seu carrinho</h2>
-      <div id="cartItems"></div>
-      <div class="cart-total" id="cartTotal"></div>
-      <button class="checkout" id="checkout">IR PARA PAGAMENTO</button>
-      <p class="modal-note">A etapa de pagamento está temporariamente desativada. Pix/e-mail serão adicionados depois.</p>
+
+  <!-- MODAL DO CARRINHO -->
+  <div
+    id="cart-modal"
+    class="modal-backdrop"
+    hidden
+  >
+
+    <div
+      class="cart-modal"
+      role="dialog"
+      aria-modal="true"
+    >
+
+      <div class="cart-header">
+
+        <div>
+          <span class="modal-mini-title">
+            SUA FORJA
+          </span>
+
+          <h2>
+            🛒 CARRINHO
+          </h2>
+        </div>
+
+        <button
+          id="close-cart"
+          class="close-modal"
+          type="button"
+        >
+          ×
+        </button>
+
+      </div>
+
+
+      <div class="cart-body">
+
+        <!-- LISTA -->
+        <div id="cart-items" class="cart-items"></div>
+
+
+        <!-- TOTAL -->
+        <div class="cart-total">
+
+          <span>
+            TOTAL DO PEDIDO
+          </span>
+
+          <strong id="cart-total">
+            A definir
+          </strong>
+
+        </div>
+
+
+        <!-- PAGAMENTO -->
+        <div class="payment-box">
+
+          <div class="payment-header">
+
+            <div class="payment-icon">
+              💳
+            </div>
+
+            <div>
+              <span>
+                FINALIZAÇÃO
+              </span>
+
+              <h3>
+                PAGAMENTO
+              </h3>
+            </div>
+
+          </div>
+
+
+          <div class="payment-decoration">
+            <span>◆</span>
+            <span>⚒️</span>
+            <span>◆</span>
+          </div>
+
+
+          <div class="pix-box">
+
+            <span class="pix-label">
+              DADO PARA PAGAMENTO
+            </span>
+
+            <strong>
+              98495-4179
+            </strong>
+
+            <small>
+              Utilize este número para realizar o pagamento.
+            </small>
+
+          </div>
+
+
+          <div class="payment-instructions">
+
+            <h4>
+              📋 INSTRUÇÕES
+            </h4>
+
+            <p>
+              Após iniciar o pagamento, realize o procedimento
+              normalmente e, ao concluí-lo, <strong>tire um print
+              do comprovante de pagamento.</strong>
+            </p>
+
+            <p>
+              Em seguida, acesse o nosso <strong>Discord</strong>,
+              abra um <strong>ticket de atendimento</strong> e
+              envie o comprovante no ticket para que a equipe
+              possa verificar e processar a entrega do benefício
+              adquirido.
+            </p>
+
+            <p class="important">
+              ⚠️ O comprovante deverá ser enviado no ticket
+              para a confirmação do pagamento.
+            </p>
+
+          </div>
+
+
+          <button
+            id="payment-button"
+            class="payment-button"
+            type="button"
+          >
+            📸 PAGAMENTO INICIADO — ENVIAR COMPROVANTE NO DISCORD
+          </button>
+
+        </div>
+
+      </div>
+
     </div>
+
   </div>
 
-  <div class="toast" id="toast"></div>
+
+  <!-- NOTIFICAÇÃO -->
+  <div
+    id="toast"
+    class="toast"
+    hidden
+  ></div>
+
+
   <script src="script.js"></script>
+
 </body>
 </html>
