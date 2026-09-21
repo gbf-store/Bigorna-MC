@@ -656,3 +656,6 @@ footer {
     font-size: 65px;
   }
   }
+.modal-backdrop[hidden] {
+  display: none !important;
+}
